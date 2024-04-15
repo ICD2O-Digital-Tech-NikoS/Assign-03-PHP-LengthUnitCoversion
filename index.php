@@ -22,31 +22,38 @@
     <title>Converting Lengths with Different Units</title>
   </head>
   <body>
-    <!-- mdl script file -->
-    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
-    <!-- references javascript file -->
-    <script defer src="./js/script.js"></script>
-    <h1>Converting Lengths with Different Units</h1>
-    <img src="./images/formula.png" alt="formula">
-    <h3>Please enter the following:</h3>
-    <p>
-      <!-- form to get degrees fahrenheit from user -->
-      <form action="javascript:convertk()">
-        <label for="kilometers" id="kilometer">Kilometers to Meters: </label>
-        <input type="number" step="any" min="0" id="kilometers" placeholder="Kilometers" /><br><br>
-        <input type="submit" value="Calculate Meters">
-      </form>
+     <!-- php echo to print the html to the page, displays title and subheading -->
+    <?php 
+      echo "<h1>Converting Lengths with Different Units</h1>";
+    ?>
+    <img src="./images/formula.png" alt="formula"> <br>
+    <?php
+      echo "<h3>Please enter the following:</h3>";
+    ?>
+    <!-- form to get degrees fahrenheit from the user -->
+    <form action="./results.php" method="post" target="meter">
+      <label for="kilometers">Kilometers:</label>
+      <input type="number" id="kilometers" step="any" min="0" placeholder="Kilometers" name="kilometers"><br><br>
+      <input type="submit" value="Calculate">
+    </form>
+
+      <!-- iframe for the results to show on the web page. -->
+      <iframe id="meter" name="meter">			
+
+      </iframe>
     
-    <div id="num-of-meters"></div>
-    
-      <form action="javascript:convertm()"><br><br>
-        <label for="meters" id="meter">Meters to Feet: </label>
-        <input type="number" step="any" min="0" id="meters" placeholder="Meters" /><br><br>
-        <input type="submit" value="Calculate Feet">
-      </form>
-    </p>
-    <!-- Create a space where the user information will be displayed -->
-    <div id="num-of-feet"></div>
+    <!-- form to get degrees fahrenheit from the user -->
+    <form action="./results2.php" method="post" target="feet">
+      <label for="meters">Meters: </label>
+      <input type="text" id="meters" step="any" min="0" placeholder="Meters" name="meters"><br><br>
+      <input type="submit" value="Calculate">
+    </form>
+
+      <!-- iframe for the results to show on the web page. -->
+      <iframe id="feet" name="feet">			
+
+      </iframe>
+
 
     <br>
   </body>
