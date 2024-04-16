@@ -3,19 +3,19 @@
 * This file contains the CSS for index.html
 */
 
-body {
- background-color: #daeaec;
- text-align: center;
+html {
+  background-color: #daeaec;
+  text-align: center;
 }
 
-h1 {
-  font: 20pt Times New Roman;
+#header {
+  font: 34pt Times New Roman;
   font-weight: bold;
   line-height: 20pt;
   color: black;
-  padding: 20px;
-  margin-left: 600px;
-  margin-right: 600px;
+  padding: 30px;
+  margin-left: 500px;
+  margin-right: 500px;
   background-color: #b7e5f0;
 }
 
