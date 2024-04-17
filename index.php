@@ -23,12 +23,12 @@
   </head>
   <body>
      <h1 id="header">Converting Lengths with Different Units</h1>";
-    <!-- php echo to print the html to the page, displays title and subheading -->
+    <!-- image of formula being used for kilometers to meters conversion -->
     <img src="./images/k-to-m.jpg" alt="formula"> <br>
     <?php
       echo "<h3>Please enter the following:</h3>";
     ?>
-    <!-- form to get degrees fahrenheit from the user -->
+    <!-- form to get number of kilometers to be converted to meters from user -->
     <form action="./k-to-m.php" method="post" target="meter">
       <label for="kilometers">Kilometers:</label>
       <input type="number" id="kilometers" step=".01" min="0" placeholder="Kilometers" name="kilometers"><br><br>
@@ -40,9 +40,10 @@
 
       </iframe>
     <br>
+    <!-- image of formula being used for meters to feet conversion -->
     <img src="./images/m-to-ft.jpg" alt="formula" height="25%" width="25%">
     <br><br>
-    <!-- form to get degrees fahrenheit from the user -->
+    <!-- form to get number of meters to be converted to feet from user -->
     <form action="./m-to-ft.php" method="post" target="feet">
       <label for="meters">Meters: </label>
       <input type="text" id="meters" step=".01" min="0" placeholder="Meters" name="meters"><br><br>

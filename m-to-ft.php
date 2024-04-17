@@ -1,8 +1,10 @@
 <?php
+  // get meters from user
   $meter = $_POST["meters"];
   // Perform calculation using the formula for meters to feet
   $feet = $meter * 3.28084;
 
+// if statement to display an error if the user inputs a 0
 if ($meter == 0) {
   echo 'Error: Please enter a number greater than 0.'; 
 }  
