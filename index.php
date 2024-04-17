@@ -22,7 +22,7 @@
     <title>Converting Lengths with Different Units</title>
   </head>
   <body>
-     <h1 id="header">Converting Lengths with Different Units</h1>";
+    <h1 id="header">Converting Lengths with Different Units</h1>";
     <!-- image of formula being used for kilometers to meters conversion -->
     <img src="./images/k-to-m.jpg" alt="formula"> <br>
     <?php
